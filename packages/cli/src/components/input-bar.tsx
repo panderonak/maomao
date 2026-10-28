@@ -6,13 +6,13 @@ import { UseCommandMenu } from "./command-menu/use-command-menu";
 import type { Command } from "./command-menu/types";
 import { CommandMenu } from "./command-menu";
 import { useToast } from "../providers/toast";
-import { useKeyboardLayer } from "../providers/toast/keyboard-layer";
+import { useKeyboardLayer } from "../providers/keyboard-layer";
 import { useDialog } from "../providers/dialog";
 import { useTheme } from "../providers/theme";
 
 type InputBarProps = {
   onSubmit: (text: string) => void;
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 export const TEXTAREA_KEY_BINDINGS: KeyBinding[] = [
